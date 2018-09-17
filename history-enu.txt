@@ -1,0 +1,117 @@
+Features:
+ * Over 3000 footprints.
+ * Easy to use, generate one footprint in few seconds
+   (include all necessary padstacks/shapes/flashes/devices file).
+ * If you cann't find the match one, add a new one within 1 minute.
+ * Program is very small (<1MB), but the footprints may be HUGE.
+ * Multilanguage support.
+ * IPC-7351A name-convention for most of the SMD footprints.
+ * Customized footprint(through skill file).
+ * Many parameters configurable.
+ * Windows GUI.
+ * Totally free.
+ 
+0.08:   2007-09-15
+  .Customized symbols will append only if skill file exist.(Uri Chaplin).
+  .A little bit rich contexts in silkscreen/assembly layer.
+  .Add some utilities (test under allegro 15.5, custom FPM menu,skills)
+  .Better format of customize skill file.
+  .Include more skill files(USB,miniPCI,etc.).
+  .Pads for QFN,SON change from oblong to fillet-rectangle. (schuang333)
+  .Bug-fixed: TH pad, thermal pad ID/OD problem. (Evayao).
+  .Bug fixed: Pads in some components are not present.
+  .Add small circle for centroid marker. (Nathan)
+  .All fields are sortable.
+  .Internal function updated(for support gold finger pad)
+
+0.07:  2007-04-29
+  .English version.(sorry for my not-properly English language)
+  .All DFA-bound support (Allegro version must be 15.5+)
+  .Some Pin2Pin bugs fixed(in some case)(SOP,SON,QFP,etc.)
+  .Better silk outline
+  .Sortable columes(click the colum head).
+  
+0.06:  2006-8-30
+  .Add over 1000 BGA/LGA (finally I done these part:)
+  .Minor change for SKILL and GUI
+  .Over 5000 footprint
+  ."batch generate" mode move to menu
+   (due to the number of footprint, we rarely use this mode)
+  .Add more skill examples.
+  .Copy/paste/cut for other application
+   (such as OrCAD capture CIS database)
+  .Support multiple selection in grid
+  to-do list:
+  * DFA-bound support (Allegro version must be 15.5+)
+  * More connector implement( USB, FPC, PCI-EXPRESS etc.)
+  * Multilanguage support( any volunteer? please contact with me.)
+  * Little forum for this FPM (http://richardlc.ifastnet.com/bbs)
+
+0.051:  2006-6-27
+  .Emergency bug-fixed:
+   * Some TH footprint has no pad.
+   * TestPad name error
+   * Normal Thermal pad error(disabled temporally)
+  others:
+  .Mouse-right-click popup menu.
+  .TH-DIP can change size for the padstack
+  .Protrusion configuration.(under testing)
+
+0.05:  2006-6-2
+  .To make file-management easy, put every file in one directory.
+  .Some parameters now are changeable
+   (be careful, you may have HUGE files if enable some options)
+  .TH pad use Advanced-thermal type now
+  .Again, some bug fixed(file-size, Anti-Size...)
+  .Finally add more footprint( rubber keypad, customized footprint)
+  .Move some skill file open-source (under \skill subdirectory)
+  .You may add your own skill file for your footprint(see examples)
+  .For better performance, shape/flash inside the footprint will not 
+  .Have .dra file, but you still can get that when extract from .brd file
+  to-do list:
+  * More context in help file
+  * Maybe will add some print feature(maybe not)
+
+0.04:  2006-4-22
+  .Footprint are over 2000
+  .Data's structure change a lot. have to re-write skill file again.:(
+  .Some feature still not enable(generate device file, change SilkWidth etc.)
+  .You can Add/Modify/Delete record now.
+  .Name-convention more like finished
+  .Better with some SMD and connector(oscillator, chip-array, NPTH, MELF...)
+  .Add customized type footprint (to generate your own footprint)
+  .Help file still not done due to time problem:(
+  .Mounting hole with 8 vias has no DRC error in .brd file
+  to-do list:
+  * Continue add new footprint.(connector, keypad, PCB-antenna etc.)
+  * Establish a way to "share data"
+  * Hope to finish the help file.:(
+
+0.03:  2006-4-01
+  .Almost rewrite whole skill files!
+  .Fix many bugs
+  .Add some pictures for regular footprint.
+  .Part of the function still not opened.
+  .Better tree-view
+  .Name-convention, meaning of "level"
+  to-do list:
+  * Hope to find more database for new footprint.
+  * Thinking about add more footprints(connector, mounting hole, keypad, etc.)
+  * Add help file.
+
+0.02:  2006-3-26
+  .Add more footprints
+  .Re-arrange some footprints group/set.
+  .You may delete footprint(mouse-right-click), but can't undo after you do that.
+  .Note for the descriptions, you may find some other name there.
+  .Add name-convention for some footprints
+
+0.01:  2006-3-18
+  .First version:0.01
+  .Cadence's Allegro use only(must with skill license enable)
+  .Test under Win2K/XP
+  .451 footprints, 157 padstacks
+  .Skill source code file not available yet.
+  .BGA not include
+  .All parameters are use default value only(not configurable)
+  
